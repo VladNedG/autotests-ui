@@ -4,16 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        h6{
+            font-size: 15px;
+        }
+
         .h2-text{
             color: blue;
+        }
+
+        .h6-text{
+            color: crimson;
+        }
+
+        #h1-text{
+            font-size: 50px;
+        }
+
+        div.python > a{
+            color: green;
+        }
+
+        ul li {
+            color: gold;
+        }
+
+        input[type="text"]{
+            background-color: aquamarine;
+        }
+
+        input[type="text"]:hover{
+            background-color: cornflowerblue;
+        }
+
+        a:hover{
+            color: cadetblue;
+        }
+
+        li::marker{
+            color: darkgoldenrod;
+        }
+
+        ul > li:nth-child(2){
+            color: darkmagenta;
         }
     </style>
 </head>
 <body>
-<div>
+<div class="python">
     <h1 id="h1-text">H1 text</h1>
     <h2 class="h2-text">H2 text</h2>
-    <h3 class="h2-text">H3 text</h3>
+    <h6 class="h2-text h6-text">H6 text</h6>
     <p>Agents interact with pages through structured accessibility trees — <span style="color: aqua">element roles, names, and refs.</span> Deterministic
         and unambiguous, no vision models required.</p>
     <a href="https://playwright.dev/python" target="_blank">Python</a>
@@ -56,6 +96,9 @@
             </tr>
         </tbody>
     </table>
+</div>
+<div class="java">
+    <a href="https://playwright.dev/python" target="_blank">Java</a>
 </div>
 </body>
 </html>
